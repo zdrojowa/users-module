@@ -1,0 +1,8 @@
+users:
+  name: Lista
+users.create:
+  name: Dodawanie
+users.edit:
+  name: Edytowanie
+users.delete:
+  name: Usuwanie

@@ -1,0 +1,21 @@
+{
+    "name": "zdrojowa/users-module",
+    "description": "",
+    "type": "library",
+    "require": {
+        "zdrojowa/cms-kernel": "~1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Kosiński",
+            "email": "jakub.kosinski.99@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Selene\\Modules\\UsersModule\\": "src/"
+        }
+    }
+}

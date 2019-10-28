@@ -1,0 +1,14 @@
+users:
+  name: Użytkownicy
+  icon: mdi mdi-account
+  permission: UsersModule
+
+  children:
+    list:
+      name: Lista
+      permission: UsersModule
+      route: UsersModule::users
+    add:
+      name: Dodaj
+      permission: UsersModule.users.create
+      route: UsersModule::users.create

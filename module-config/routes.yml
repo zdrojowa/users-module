@@ -1,0 +1,70 @@
+# Pobieranie użytkowników #
+
+users:
+  path: /dashboard/users
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@index
+  methods:
+    - GET
+  permission: UsersModule
+
+
+
+users.ajax:
+  path: /dashboard/users/ajax
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@ajax
+  methods:
+    - POST
+    - GET
+  permission: UsersModule
+
+# Pobieranie użytkowników #
+
+
+# Dodawanie użytkownika #
+
+users.create:
+  path: /dashboard/users/create
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@create
+  methods:
+    - GET
+  permission: UsersModule.users.create
+
+users.store:
+  path: /dashboard/users
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@store
+  methods:
+    - POST
+  permission: UsersModule.users.create
+
+# Dodawanie użytkownika #
+
+# Edytowanie użytkownika #
+
+users.edit:
+  path: /dashboard/users/{{user}}/edit
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@edit
+  methods:
+    - GET
+  permission: UsersModule.users.edit
+
+users.update:
+  path: /dashboard/users/{{user}}
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@update
+  methods:
+    - PUT
+    - PATCH
+  permission: UsersModule.users.edit
+
+# Edytowanie użytkownika #
+
+# Usuwanie użytkownika #
+
+users.destroy:
+  path: /dashboard/users/{{user}}
+  controller: Selene\Modules\UsersModule\Http\Controllers\UsersController@destroy
+  methods:
+    - DELETE
+  permission: UsersModule.users.delete
+
+# Usuwanie użytkownika #
+

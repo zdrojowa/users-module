@@ -3,7 +3,7 @@
     "description": "",
     "type": "library",
     "require": {
-        "zdrojowa/cms-kernel": "~1.3"
+        "zdrojowa/cms-kernel": "~2.0"
     },
     "license": "MIT",
     "authors": [
